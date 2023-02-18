@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignment 5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0dfc93affd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="w-3/4 mx-auto">
+        <nav class="flex justify-between items-center bg-[#E7F4FB] py-3 px-6 rounded-md  my-3">
+            <div>
+                <h1 class="text-2xl">Interactive <br><span class="text-orange-500">Geometry Genius</span></h1>
+            </div>
+            <div>
+                <button id="blog-id" class="btn py-2 px-6 bg-[#1090D8] rounded-md shadow-xl">Blog</button>
+            </div>
+        </nav>
+    </header>
+    <main class="md:w-11/12 md:mx-auto">
+        <section class="flex flex-col md:flex-row md:gap-3">
+            <div class="grid md:grid-cols-3 gap-3 md:w-[75%]">
+                <div class="p-8 bg-[#FBBCED] rounded-md shadow-md my-card-items">
+                    <div class=" md:h-[40%]">
+                        <img src="images file/triangle.png" alt="" class="w-100 mx-auto  md:h-[95%]">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h1 class="text-2xl my-2">Triangle</h1>
+                        <div class="flex justify-evenly md:justify-between md:items-center">
+                            <h3>Area (A)</h3>
+                            <h3> = </h3>
+                            <h3>0.5</h3>
+                            <i class="fa-solid fa-xmark"></i>
+                            <h3 id="triangle-lenght">b</h3>
+                            <i class="fa-solid fa-xmark"></i>
+                            <h3 id="triangle-height">h</h3>
+                        </div>
+                        <div class="my-2">
+                            <input id="height" type="text" class="w-[30%] border-none rounded-md">
+                            <label for="">cm</label>
+                            <input id="left" type="text" class="w-[30%] border-none rounded-md">
+                            <label for="">cm</label>
+                        </div>
+                        <button id="calculate-btn" class="py-2 px-4 bg-[#1090D8] md:w-full text-white mt-2 rounded-md">Calculate</button>
+                    </div>
+                </div>
+                <div class="p-8 bg-[#FBBCED] rounded-md shadow-md my-card-items">
+                    <div class="md:h-[40%]">
+                        <img src="images file/rectangle.png" alt=""  class="w-100 mx-auto  md:h-[95%]">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h1 class="text-2xl my-2">Rectangle</h1>
+                        <div class="flex justify-evenly md:justify-between md:items-center">
+                            <h3>Area (A)</h3>
+                            <h3> = </h3>
+                            <h3 id = rectangle-length>w</h3>
+                            <i class="fa-solid fa-xmark"></i>
+                            <h3 id="rectangle-height-element">l</h3>
+                        </div>
+                        <div class="my-2">
+                            <input id="rectangle-height" type="text" class="w-[30%] border-none rounded-md">
+                            <label for="">cm</label>
+                            <input id = "rectangle-left" type="text" class="w-[30%] border-none rounded-md">
+                            <label for="">cm</label>
+                        </div>
+                        <button id="btn-rectangle"class="py-2 px-4 bg-[#1090D8] md:w-full text-white mt-2 rounded-md">Calculate</button>
+                    </div>
+                </div>
+                <div class="p-8 bg-[#FBBCED] rounded-md shadow-md my-card-items">
+                    <div class=" md:h-[40%]">
+                        <img src="images file/parallelogram.png" alt=""  class="w-100 mx-auto  md:h-[95%]">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h1 class="text-2xl my-2">Parallelogram</h1>
+                        <div class="flex justify-evenly md:justify-between md:items-center">
+                            <h3>Area (A)</h3>
+                            <h3> = </h3>
+                            <h3 id="parallelogram-length">b</h3>
+                            <i class="fa-solid fa-xmark"></i>
+                            <h3 id="parallelogram-height">h</h3>
+                        </div>
+                        <h3 class="my-2">b=10cm, h=12cm</h3>
+                        <button id="btn-parallelogram" class="py-2 px-4 bg-[#1090D8] md:w-full text-white mt-2 rounded-md">Calculate</button>
+                    </div>
+                </div>
+                <div class="p-8 bg-[#FBBCED] rounded-md shadow-md my-card-items">
+                    <div class=" md:h-[40%]">
+                        <img src="images file/rectangle.png" alt=""  class="w-100 mx-auto  md:h-[95%]">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h1 class="text-2xl my-2">Rhombus</h1>
+                        <div class="flex justify-evenly md:justify-between md:items-center">
+                            <h3>Area (A)</h3>
+                            <h3> = </h3>
+                            <h3>0.5</h3>
+                            <i class="fa-solid fa-xmark"></i>
+                            <h3 id = "rhombus-id">d<sub>1</sub></h3>
+                            <i class="fa-solid fa-xmark"></i>
+                            <h3 id="rhombus-element">d <sub>2</sub></h3>
+                        </div>
+                        <h3 class="my-2">d <sub>1</sub>=12cm, d <sub>2</sub>=10cm</h3>
+                        <button id="btn-rhombus" class="py-2 px-4 bg-[#1090D8] md:w-full text-white mt-2 rounded-md">Calculate</button>
+                    </div>
+                </div>
+                <div class="p-8 bg-[#FBBCED] rounded-md shadow-md my-card-items">
+                    <div class=" md:h-[40%]">
+                        <img src="images file/pentagon.png" alt=""  class="w-100 mx-auto  md:h-[95%]">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h1 class="text-2xl my-2">Pentagon</h1>
+                        <div class="flex justify-evenly md:justify-between md:items-center">
+                            <h3>Area (A)</h3>
+                            <h3> = </h3>
+                            <h3 id="pentagon-length">p</h3>
+                            <i class="fa-solid fa-xmark"></i>
+                            <h3 id="pentagon-height">b</h3>
+                        </div>
+                        <h3 class="my-2">p = 6cm, b = 10cm</h3>
+                        <button id="btn-pentagon" class="py-2 px-4 bg-[#1090D8] md:w-full text-white mt-2 rounded-md">Calculate</button>
+                    </div>
+                </div>
+                <div class="button-card p-8 bg-[#FBBCED]  rounded-md shadow-md my-card-items">
+                    <div class=" md:h-[40%]">
+                        <img src="images file/ellipse.png" alt=""  class="w-100 mx-auto h-[95%]">
+                    </div>
+                    <div class="text-center mt-3">
+                        <h1 class="text-2xl my-2">Ellipse</h1>
+                        <div class="flex justify-evenly md:justify-between md:items-center">
+                            <h3>Area (A)</h3>
+                            <h3> = </h3>
+                            <h3><span id="ellipse"><span id="pi"></span> ab</span></h3>
+                        </div>
+                        <h3 class="my-2">a = 10cm, b = 4cm</h3>
+                        <button id="btn-ellipse" class="py-2 px-4 bg-[#1090D8] md:w-full text-white mt-2 rounded-md">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[70%] mx-auto md:w-[25%] text-center md:my-4 my-card-items md:h-[300px] md:rounded-md">
+                <h1 class="my-2 text-xl">Area Calculation</h1>
+                <div class="my-3 flex justify-between items-center text-[13px]">
+                    <h1>1 <span>Triangle</span></h1>
+                    <h1><span id="triangle-id-element">12</span><sup id="sub-filt">cm2</sup></h1>
+                    <button id="triangle-convert-element" class="py-2 px-3 bg-[#1090D8] text-white rounded-md">Covert to m<sup>2</sup></button>
+                </div>
+                <div class="my-3 flex justify-between items-center text-[13px]">
+                    <div id="triangle-block" class="hidden">
+                        <h1>2 <span>Rectangle</span></h1>
+                    <h1> <span id="rectangle-id-element">12</span><sup id="rectangle-fild">cm2</sup></h1>
+                    <button id="riangle-convert-element" class="py-2 px-3 bg-[#1090D8] text-white rounded-md">Covert to m<sup>2</sup></button>
+                    </div>
+                </div>
+                <div class="my-3 flex justify-between items-center text-[13px]">
+                    <div id="parallelogram-block" class="hidden">
+                        <h1>3 <span>Parallelogram</span></h1>
+                        <h1><span id="parallelogram-id-element">12</span><sup id="parallelogram-sup">cm2</sup></h1>
+                        <button id="parallelgram-convert-elemetn" class="py-2 px-3 bg-[#1090D8] text-white rounded-md">Covert to m<sup>2</sup></button>
+
+                    </div>
+                </div>
+                <div class="my-3 flex justify-between items-center text-[13px]">
+                    <div id="rhombus-block" class="hidden">
+                        <h1>4 <span>Rhombus</span></h1>
+                        <h1><span id="rhombus-element">12</span><span id="rhombus-sup">cm<sup>2</sup></span></h1>
+                        <button id="rhombus-convert-element" class="py-2 px-3 bg-[#1090D8] text-white rounded-md">Covert to m<sup>2</sup></button>
+
+                    </div>
+                </div>
+                <div class="my-3 flex justify-between items-center text-[13px]">
+                    <div id="pentagon-block" class="hidden">
+                        <h1>5 <span>Pentagon</span></h1>
+                    <h1><span id="pentagon-filt">12</span><span id="pentagon-sup">cm<sup>2</sup></span></h1>
+                    <button id="pentagon-convert" class="py-2 px-3 bg-[#1090D8] text-white rounded-md">Covert to m<sup>2</sup></button>
+                    </div>
+                </div>
+                <div class="my-3 flex justify-between items-center text-[13px]">
+                    <div id="ellipse-block" class="hidden">
+                        <h1>6 <span>Ellipse</span></h1>
+                        <h1><span id="ellipse-filt">12</span><span id="ellipse-sup">cm<sup>2</sup></span></h1>
+                        <button id="ellipse-convert" class="py-2 px-3 bg-[#1090D8] text-white rounded-md">Covert to m<sup>2</sup></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/utilitij-files.js"></script>
+    <script src="js/script-files.js"></script>
+    <script src="js/convert-files.js"></script>
+    <script src="js/mouseover-files.js"></script>
+</body>
+</html>
